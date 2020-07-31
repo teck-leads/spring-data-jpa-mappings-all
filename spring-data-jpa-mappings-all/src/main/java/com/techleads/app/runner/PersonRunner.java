@@ -1,4 +1,4 @@
-package com.techleads.app;
+package com.techleads.app.runner;
 
 import java.util.Date;
 import java.util.List;
@@ -9,7 +9,7 @@ import org.springframework.stereotype.Component;
 
 import com.techleads.app.dao.PersonDao;
 import com.techleads.app.model.Person;
-@Component
+//@Component
 public class PersonRunner implements CommandLineRunner {
 @Autowired
 	private PersonDao dao;
