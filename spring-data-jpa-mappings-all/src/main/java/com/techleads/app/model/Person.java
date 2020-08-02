@@ -17,12 +17,12 @@ import lombok.NoArgsConstructor;
 @AllArgsConstructor
 @NoArgsConstructor
 @Entity(name = "PERSON")
-@SequenceGenerator(name = "seq", initialValue = 1001, allocationSize = 1)
+@SequenceGenerator(name = "person_seq", initialValue = 1001, allocationSize = 1)
 @NamedQuery(name="findAll", query="select p from PERSON p") //table name must be as database name
 public class Person {
 
 	@Id
-	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "seq")
+	@GeneratedValue(strategy = GenerationType.SEQUENCE, generator = "person_seq")
 	private Integer id;
 	private String name;
 	private String location;

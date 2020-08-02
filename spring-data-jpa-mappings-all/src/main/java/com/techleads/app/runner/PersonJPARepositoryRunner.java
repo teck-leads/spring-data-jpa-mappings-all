@@ -10,7 +10,7 @@ import org.springframework.stereotype.Component;
 import com.techleads.app.dao.PersonJPARepository;
 import com.techleads.app.model.Person;
 
-@Component
+//Component
 public class PersonJPARepositoryRunner implements CommandLineRunner {
 	@Autowired
 	private PersonJPARepository personJPARespository;
